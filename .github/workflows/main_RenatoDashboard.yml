@@ -30,7 +30,7 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: retberegistry.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_30a7287a53554a9fb1331a13bada813c }}/fastapi-on-azure-functions:${{ github.sha }}
+        tags: retappregistry.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_30a7287a53554a9fb1331a13bada813c }}/fastapi-on-azure-functions:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
