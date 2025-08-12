@@ -48,4 +48,4 @@ jobs:
         app-name: 'RenatoDashboard'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_35cb3a2fe5b14da2a4e11fd355f77a05 }}
-        images: 'retberegistry.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_30a7287a53554a9fb1331a13bada813c }}/fastapi-on-azure-functions:${{ github.sha }}'
+        images: 'retappregistry.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_30a7287a53554a9fb1331a13bada813c }}/fastapi-on-azure-functions:${{ github.sha }}'
